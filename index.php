@@ -22,6 +22,22 @@
 						<div class="span12">
 						<h1>Dr P Bear</h1> 
 						<h2>The date is <?php echo date("d-M-Y") ?></h2>
+						<h2>Can I connect to MySQL?
+						<?php
+						// Create connection
+						$con=mysqli_connect("localhost","root","sweetpotato","mydatabase");
+
+						// Check connection
+						if (mysqli_connect_errno($con))
+						{?>
+							<span style="color:red;">NO :( <?php echo mysqli_connect_error() ?></span><?php
+						}
+						else
+						{?>
+							<span style="color:green;">YES :)</span><?php
+						}
+						?>
+						</h2>
 						</div>					
 				</div>
 				</div>
