@@ -21,6 +21,7 @@
 				<div class="row-fluid">
 						<div class="span12">
 						<h1>Dr P Bear</h1> 
+						<h2>The date is <?php echo date("d-M-Y") ?></h2>
 						</div>					
 				</div>
 				</div>
